@@ -2,7 +2,8 @@
 
 create_kernel_tags(){
 
-	cd $ANDROID_BUILD_TOP/$1
+	#WARNNING: $1 here is NULL, so don't use "cd $ANDROID_BUILD_TOP/$1"
+	#cd $ANDROID_BUILD_TOP/$1
 	
 	rm -f cscope.out cscope.po.out  cscope.in.out  cscope.files tags 
 	
@@ -50,7 +51,7 @@ create_kernel_tags(){
 
 create_uboot_tags(){
 
-	cd $ANDROID_BUILD_TOP/u-boot15
+	#cd $ANDROID_BUILD_TOP/u-boot15
 	
 	rm -f cscope.out cscope.po.out  cscope.in.out  cscope.files   
 	
@@ -150,9 +151,13 @@ then
 	exit
 fi
 
-if [[ $1 = kernel* ]];then
+# enter into subdirectory
+cd $1
+
+# then make tags
+if [[ $1 == kernel* ]];then
 	create_kernel_tags
-elif [[ $1 = uboot* ]];then
+elif [[ $1 == uboot* ]];then
 	create_uboot_tags
 else
 	echo not support parameter: $1
