@@ -155,9 +155,9 @@ fi
 cd $1
 
 # then make tags
-if [[ $1 == kernel* ]];then
+if [[ $1 = kernel* ]];then
 	create_kernel_tags
-elif [[ $1 == uboot* ]];then
+elif [[ $1 = uboot* ]];then
 	create_uboot_tags
 else
 	echo not support parameter: $1
