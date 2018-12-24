@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/tmp/ylog'
+let g:netrw_dirhist_2='/tmp/ylog/ylog'
+let g:netrw_dirhist_3='/tmp/ylog/ylog/kernel'
+let g:netrw_dirhist_4='/tmp/ylog'
+let g:netrw_dirhist_5='/tmp/ylog/last_ylog'
+let g:netrw_dirhist_6='/tmp/ylog/last_ylog/ylog1'
+let g:netrw_dirhist_7='/tmp/ylog/last_ylog/ylog1/kernel'
+let g:netrw_dirhist_8='/home/likewise-open/SPREADTRUM/leon.he/Projects/sprdroid6.0_trunk_k318_dev/vendor/sprd/modules/backlight_test'
+let g:netrw_dirhist_9='/home/likewise-open/SPREADTRUM/leon.he/Projects/sshfs/out/target/product/spsharkl3_zebu/obj/KERNEL'
